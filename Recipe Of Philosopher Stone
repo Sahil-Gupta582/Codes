@@ -1,0 +1,79 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    try{
+		Scanner val=new Scanner(System.in);
+        long t=val.nextLong();
+        List<Map<Long, Long>> listOfMaps = new ArrayList<Map<Long, Long>>();
+        while(t!=0)
+        {
+        int n=val.nextInt();
+        long c=val.nextLong();
+        HashMap<Long,Long> hmap=new HashMap<Long,Long>();
+        long l[]=new long[n];
+        long b[]=new long[n];
+        long co[]=new long[n];
+        for(int i=0;i<n;i++)
+        {
+            l[i]=val.nextLong();
+            b[i]=val.nextLong();
+            co[i]=val.nextLong();
+        }
+        long prev1=0;
+        long prev2=0;
+        for(int i=n-1;i>=0;i--)
+        {
+            long k=0;
+            if(i==n-1)
+            {
+                k=l[i]*b[i];
+                prev1=l[i];
+                prev2=b[i];
+            }
+            else
+            {
+                if(l[i]>prev1)
+                {
+                    if(b[i]>prev2)
+                    {
+                        k=l[i]*b[i]-prev1*prev2;
+                        prev2=b[i];
+                    }
+                    else
+                    {
+                        k=(l[i]-prev1)*b[i];
+                    }
+                    prev1=l[i];
+                }
+                else
+                {
+                    if(b[i]>prev2)
+                    {
+                        k=(b[i]-prev2)*l[i];
+                        prev2=b[i];
+                    }               
+                }
+            }
+            Long x = hmap.get(co[i]);
+            if(hmap.get(co[i])==null)
+            {
+                hmap.put(co[i],k);
+            }
+            else
+            {
+                hmap.put(co[i],(x+k));
+            }
+            }
+            listOfMaps.add(hmap);
+            t--;
+        }
+        for(int i=0;i<listOfMaps.size();i++){
+            for (HashMap.Entry<Long, Long> al : listOfMaps.get(i).entrySet()){
+            System.out.print(al.getValue()+" ");}}
+	    }catch(Exception t){}
+	}
+}
