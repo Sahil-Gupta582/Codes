@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Codechef/August Challenge.iml" filepath="$PROJECT_DIR$/Codechef/August Challenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Codechef/August Challenge (Div.2).iml" filepath="$PROJECT_DIR$/Codechef/August Challenge (Div.2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Codechef/August Challenge 2020 (div.2 ).iml" filepath="$PROJECT_DIR$/Codechef/August Challenge 2020 (div.2 ).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Codechef/August Challnge 2020 (DIV.2).iml" filepath="$PROJECT_DIR$/Codechef/August Challnge 2020 (DIV.2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Codechef/Codechef.iml" filepath="$PROJECT_DIR$/Codechef/Codechef.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Codeforces/Codeforces.iml" filepath="$PROJECT_DIR$/Codeforces/Codeforces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Codes.iml" filepath="$PROJECT_DIR$/.idea/Codes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hackerrank/Hackerrank.iml" filepath="$PROJECT_DIR$/Hackerrank/Hackerrank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atCoder/atCoder.iml" filepath="$PROJECT_DIR$/atCoder/atCoder.iml" />
+    </modules>
+  </component>
+</project>
